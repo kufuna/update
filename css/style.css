@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+}
+* {
+	box-sizing: border-box;
+	backface-visibility: hidden;
+	font-family: 'Signika', sans-serif;
+}
+.kfn_anim {
+	visibility: hidden;
+}
+.kfn_anim.active-kfn {
+	visibility: visible;
+}
+.kfn_anim.slideUp {
+	transform: translate3d(0,100%,0);
+	opacity: 0;
+	transition: 1s;
+}
+.kfn_anim.slideUp.active-kfn {
+	transform: translate3d(0,0%,0);
+	opacity: 1;
+	transition: 1s;
+}
